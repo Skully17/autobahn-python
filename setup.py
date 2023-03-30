@@ -255,9 +255,9 @@ setup(
     long_description=docstr,
     license='MIT License',
     author='typedef int GmbH',
-    url='https://github.com/crossbario/autobahn-python',
+    url='https://github.com/Skully17/autobahn-python',
     project_urls={
-        'Source': 'https://github.com/crossbario/autobahn-python',
+        'Source': 'https://github.com/Skully17/autobahn-python',
     },
     platforms='Any',
     install_requires=[
