@@ -36,7 +36,7 @@ from collections.abc import Sequence
 
 # FIXME
 # https://github.com/google/yapf#example-as-a-module
-from yapf.yapflib.yapf_api import FormatCode
+# from yapf.yapflib.yapf_api import FormatCode
 
 import txaio
 from autobahn.wamp.exception import InvalidPayload
@@ -1884,10 +1884,10 @@ class FbsRepository(object):
             # write out code modules
             #
             if code_file_name:
-                try:
-                    code = FormatCode(code)[0]
-                except Exception as e:
-                    print('error during formatting code: {}'.format(e))
+                # try:
+                #     code = FormatCode(code)[0]
+                # except Exception as e:
+                #     print('error during formatting code: {}'.format(e))
                 data = code.encode('utf8')
 
                 fn = os.path.join(*(code_file_dir + [code_file_name]))
@@ -1910,10 +1910,10 @@ class FbsRepository(object):
             if test_code_file_name:
                 test_code_sections = test_code_modules[code_file]
                 test_code = '\n\n\n'.join(test_code_sections)
-                try:
-                    test_code = FormatCode(test_code)[0]
-                except Exception as e:
-                    print('error during formatting code: {}'.format(e))
+                # try:
+                #     test_code = FormatCode(test_code)[0]
+                # except Exception as e:
+                #     print('error during formatting code: {}'.format(e))
                 data = test_code.encode('utf8')
 
                 fn = os.path.join(*(code_file_dir + [test_code_file_name]))
