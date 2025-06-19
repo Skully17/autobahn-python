@@ -5,6 +5,16 @@
 Changelog
 =========
 
+24.4.2
+------
+
+- fix: Ensure ID generator in range [1, 2 ** 53] (#1637)
+
+24.4.1
+------
+
+- new: bump minimum required Twisted version to 24.3.0 (`see also <https://github.com/crossbario/autobahn-python/pull/1634>`_)
+
 23.6.2
 ------
 
