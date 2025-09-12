@@ -127,7 +127,7 @@ extras_require_xbr = [
     # ImportError: cannot import name 'getargspec' from 'inspect'
     # https://github.com/ethereum/web3.py/issues/2704#issuecomment-1369041219
     # pip install git+https://github.com/ethereum/web3.py.git
-    'web3[ipfs]>=7.0.0',              # MIT license
+    'web3>=7.0.0',              # MIT license
 
     # the following is needed for EIP712 ("signed typed data"):
     'rlp>=2.0.1',               # MIT license
@@ -144,7 +144,7 @@ extras_require_xbr = [
 
     # the following is needed for the WAMP/XBR IDL code generator
     'jinja2>=2.11.3',           # BSD license
-    'yapf==0.29.0',             # Apache 2.0
+    'yapf==0.43.0',             # Apache 2.0
 
     # the following is needed for XBR account synch and device pairing
     'spake2>=0.8',              # MIT license (https://github.com/warner/python-spake2/blob/master/LICENSE)
